@@ -8,6 +8,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -56,26 +58,26 @@
           if (analytics.invoked)
             window.console &&
               console.error &&
-              console.error("Segment snippet included twice.");
+              console.error('Segment snippet included twice.');
           else {
             analytics.invoked = !0;
             analytics.methods = [
-              "trackSubmit",
-              "trackClick",
-              "trackLink",
-              "trackForm",
-              "pageview",
-              "identify",
-              "reset",
-              "group",
-              "track",
-              "ready",
-              "alias",
-              "debug",
-              "page",
-              "once",
-              "off",
-              "on"
+              'trackSubmit',
+              'trackClick',
+              'trackLink',
+              'trackForm',
+              'pageview',
+              'identify',
+              'reset',
+              'group',
+              'track',
+              'ready',
+              'alias',
+              'debug',
+              'page',
+              'once',
+              'off',
+              'on'
             ];
             analytics.factory = function(t) {
               return function() {
@@ -90,19 +92,19 @@
               analytics[e] = analytics.factory(e);
             }
             analytics.load = function(t, e) {
-              var n = document.createElement("script");
-              n.type = "text/javascript";
+              var n = document.createElement('script');
+              n.type = 'text/javascript';
               n.async = !0;
               n.src =
-                "https://cdn.segment.com/analytics.js/v1/" +
+                'https://cdn.segment.com/analytics.js/v1/' +
                 t +
-                "/analytics.min.js";
-              var a = document.getElementsByTagName("script")[0];
+                '/analytics.min.js';
+              var a = document.getElementsByTagName('script')[0];
               a.parentNode.insertBefore(n, a);
               analytics._loadOptions = e;
             };
-            analytics.SNIPPET_VERSION = "4.1.0";
-            analytics.load("ENr6UbiEnXhHLrlu2iCiLz7KoOzvQlbF");
+            analytics.SNIPPET_VERSION = '4.1.0';
+            analytics.load('ENr6UbiEnXhHLrlu2iCiLz7KoOzvQlbF');
             analytics.page();
           }
       })();
