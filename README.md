@@ -90,3 +90,4 @@ Your app is ready to be deployed!
 ## 4. Run `git pull` to update most up to date version of code. If you have more updated code and try to run `git push`and you get a message saying you are ahead of the branch, running `git pull` can sometiems help resolve changes to what is the most accurate version of the file. Then running `git push` to resolve merge changes and publish changes
 
 ## 5. While running `git push` if you get a message saying that you are unable to push because you don't have updated code then run `git stash --include-untracked` this will stash and save all your current untracked and tracked files. Then you can run `git pull` o recieve the most updated version of the code. Then you can run `git stash apply` to apply your original changes.
+"# koinStreet" 
